@@ -1,0 +1,48 @@
+ul{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        padding: 2rem;
+        list-style: none;
+    }
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    hr, p {
+        margin-top: 0
+    }
+
+    p {
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    hr {
+        min-width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    hr {
+        min-width: 100%;
+    }
+
+    textarea {
+        margin: 0;
+        padding: 0;
+        min-width: 11rem;
+        min-height: 10rem;
+    }
+}
