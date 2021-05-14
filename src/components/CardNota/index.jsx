@@ -1,14 +1,13 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 
-function CardNota() {
+function CardNota(props) {
     return(
         <Card>
-        <Card.Header as="h5">Featured</Card.Header>
+        <Card.Header as="h5">{props.title}</Card.Header>
         <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
           <Card.Text>
-            With supporting text below as a natural lead-in to additional content.
+            {props.text}
           </Card.Text>
         </Card.Body>
       </Card>

@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button'
+
+import "./styles.scss";
 
 function Formulario() {
     return(
@@ -10,7 +13,8 @@ function Formulario() {
             <p>Digite o título</p>
             <input type="text" />
             <hr />
-            <textarea></textarea>
+            <textarea placeholder="Digite sua nota aqui!"/>
+            <Button variant="outline-success">Adicionar</Button>
         </form>
     );
 }
