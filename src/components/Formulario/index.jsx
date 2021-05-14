@@ -1,20 +1,32 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
+import Alert from 'react-bootstrap/Alert'
+
 
 import "./styles.scss";
+import { FormControl, InputGroup } from 'react-bootstrap';
 
 function Formulario() {
     return(
         <form>
             <header>
-                <p>Digite novas notas</p>
+                <Alert variant="primary">Digite novas notas</Alert>
                 <hr />
             </header>
             <p>Digite o título</p>
-            <input type="text" />
+            <InputGroup className="mb-3">
+                
+                <FormControl
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                />
+            </InputGroup>
             <hr />
-            <textarea placeholder="Digite sua nota aqui!"/>
-            <Button variant="outline-success">Adicionar</Button>
+            <InputGroup>
+                <FormControl as="textarea" aria-label="With textarea" />
+            </InputGroup>
+            <Button className="mt-4" variant="outline-success">Adicionar</Button>
         </form>
     );
 }
