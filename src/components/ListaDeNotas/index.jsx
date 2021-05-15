@@ -18,12 +18,12 @@ function ListaDeNotas() {
         },
     ]
 
-    return(
+    return (
         <ul>
-            {lista.map( (obj, index) => {
-                return(
+            {lista.map((obj, index) => {
+                return (
                     <li key={index}>
-                        <CardNota  title={obj.title} text={obj.text} />
+                        <CardNota title={obj.title} text={obj.text} />
                     </li>
                 );
             })}
