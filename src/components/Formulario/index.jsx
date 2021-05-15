@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 import "./styles.scss";
 
 function Formulario() {
-    return(
+    return (
         <form>
             <header>
                 <p>Digite novas notas</p>
@@ -13,7 +13,7 @@ function Formulario() {
             <p>Digite o título</p>
             <input type="text" />
             <hr />
-            <textarea placeholder="Digite sua nota aqui!"/>
+            <textarea placeholder="Digite sua nota aqui!" />
             <Button variant="outline-success">Adicionar</Button>
         </form>
     );
