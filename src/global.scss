@@ -5,27 +5,27 @@ html, body {
 
 html {
     height: 100vh;
+    max-height: 100%;
     width: 100vw;
+    max-width: 100%;
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     justify-content: center;
-    border: 1px solid red;
     font-size: 16px;
 }
 
 body {
     min-width: 95%;
     max-width: 95%;
-    border: 1px solid green;
 }
+
 
 
 
 main {
     display: flex;
     flex-direction: row;
-    border: yellow 1px solid;
     padding-left: 3rem;
     margin-right: 3rem;
 }
